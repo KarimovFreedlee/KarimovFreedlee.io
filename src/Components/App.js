@@ -4,6 +4,14 @@ import Body from './Body'
 import '../ComponentsView/App.css'
 
 class App extends React.Component{
+  constructor(){
+    super()
+    this.state = {
+      onHeader: false
+    };
+  }
+
+
   render(){
     return (
       <div className="App">
@@ -12,7 +20,7 @@ class App extends React.Component{
       </div>
     );
   }
-  
+
 }
 
 export default App;
