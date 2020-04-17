@@ -1,7 +1,8 @@
 .Body{
     text-align: center;
-    height: 100%;
 }
 p{
-    margin-top: 20%;
+    font-size: 80px;
+    margin-top: 15%;
+    color:white;
 }
