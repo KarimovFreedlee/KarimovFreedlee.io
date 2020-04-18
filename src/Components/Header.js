@@ -1,5 +1,5 @@
 import React  from 'react';
-import { fadeIn } from 'react-animations'
+import { fadeIn, fadeOut } from 'react-animations'
 import Radium, {StyleRoot} from 'radium';
 import '../ComponentsView/Header.css'
 
@@ -7,6 +7,10 @@ const styles = {
   fadeIn: {
     animation: 'x 1s',
     animationName: Radium.keyframes(fadeIn, 'fadeIn')
+  },
+  fadeOut: {
+    animation: 'x 1s',
+    animationName: Radium.keyframes(fadeOut, 'fadeOut')
   }
 }
 
@@ -14,15 +18,10 @@ class Header extends React.Component{
   constructor(){
     super()
     this.state = {
-      isShow: true
+      isMouseInside: true
     }
   }
 
-  getInitialState() {
-    return {
-      isMouseInside: false
-    };
-  }
   mouseEnter = () => {
     this.setState({ isMouseInside: true });
   }
