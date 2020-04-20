@@ -12,6 +12,7 @@ const headerReducer = (state = initialState, action) => {
             return {...state, activePage: action.payload};
         case 'CHANGE_TO_MAIN':
             return {...state, activePage: action.payload};
+            
     }
     return state;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { fadeIn, fadeOut } from 'react-animations'
 import Radium, {StyleRoot} from 'radium';
-import {useSelector, useDispatch} from 'react-redux'
+import { useDispatch } from 'react-redux'
 import {changeToAbout, changeToContacts, changeToMain, changeToPortfolio} from '../Store/Actions/HeaderActions'
 
 
@@ -19,7 +19,6 @@ const styles = {
 
 
 function Buttons (){
-    const activePage = useSelector(state => state.activePage);
     const dispatch = useDispatch();
     return(
            <div>

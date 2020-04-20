@@ -1,16 +1,21 @@
 import React from 'react'
+import Main from './Main'
+import About from './About'
+import {useSelector} from 'react-redux'
 import '../ComponentsView/Body.css'
 
-class Body extends React.Component{
-    render(){
-        return(
-            <div className='Body'>
-                <p>
-                    Welcome to my portfolio
-                </p>
-            </div>
-        );
-    }
+function Body (){
+
+    const activePage = useSelector(state => state.activePage);
+
+    return(
+        <div>
+            {activePage === "MAIN" ? <Main/>:
+            activePage === "ABOUT" ? <About/>:
+            null}
+        </div>
+    );
+    
 }
 
 export default Body
