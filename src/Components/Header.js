@@ -2,6 +2,7 @@ import React  from 'react';
 import { fadeIn, fadeOut } from 'react-animations'
 import Radium, {StyleRoot} from 'radium';
 import '../ComponentsView/Header.css'
+import Buttons from './Buttons'
 
 const styles = {
   fadeIn: {
@@ -13,6 +14,8 @@ const styles = {
     animationName: Radium.keyframes(fadeOut, 'fadeOut')
   }
 }
+
+
 
 class Header extends React.Component{
   constructor(){
@@ -32,12 +35,7 @@ class Header extends React.Component{
   render(){
     return (
       <div className="Header" onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave}>
-        {this.state.isMouseInside ? <StyleRoot><div className='buttonContainer' style={styles.fadeIn}>
-          <button>Main</button>
-          <button>About</button>
-          <button>Portfolio</button>
-          <button>Contacts</button>
-        </div></StyleRoot>: null}
+        {this.state.isMouseInside ? <Buttons/> : null }
       </div>
     );
   }
