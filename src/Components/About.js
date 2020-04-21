@@ -1,6 +1,7 @@
 import React from 'react'
-import { fadeInUp } from 'react-animations'
+import { fadeInRight, fadeInUp } from 'react-animations'
 import Radium, {StyleRoot} from 'radium';
+import '../ComponentsView/About.css'
 
 const styles = {
     fadeInUp: {
@@ -8,14 +9,14 @@ const styles = {
       animationName: Radium.keyframes(fadeInUp, 'fadeInUp')
     }
 }
-
 function About(){
     return(
         <div>
             <StyleRoot>
-                <p style ={styles.fadeInUp}>
-                    This is info about me
-                </p>
+                <div className="body" style = {styles.fadeInUp}>
+                <p className= "title">About</p>
+                </div>
+                <div className="arrow-down" style = {styles.fadeInUp} ></div>
             </StyleRoot>
         </div>
     )

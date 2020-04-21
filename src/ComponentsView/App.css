@@ -1,10 +1,11 @@
 .App{
   margin:0;
   padding:0;
- 
 }
 
 html, body, #root, .App {
+  overflow: hidden;
   height: 100%;
-  background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-position: center;
 }

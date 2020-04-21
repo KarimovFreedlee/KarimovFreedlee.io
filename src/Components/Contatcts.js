@@ -1,12 +1,12 @@
 import React from 'react'
-import { fadeInUp } from 'react-animations'
+import { fadeInLeft } from 'react-animations'
 import Radium, {StyleRoot} from 'radium';
 import '../ComponentsView/Contacts.css'
 
 const styles = {
-    fadeInUp: {
+    fadeInLeft: {
       animation: 'x 1s',
-      animationName: Radium.keyframes(fadeInUp, 'fadeInUp')
+      animationName: Radium.keyframes(fadeInLeft, 'fadeInLeft')
     }
 }
 
@@ -14,13 +14,11 @@ function Contacts(){
     return(
         <div className='Body'>
             <StyleRoot>
-                <p style = {styles.fadeInUp}>
-                    <div className = "iconContainer">
+                <div className = "iconContainer" style = {styles.fadeInLeft}>
                     <img src="https://image.flaticon.com/icons/svg/2111/2111828.svg"/>
                     <img src="https://image.flaticon.com/icons/svg/2111/2111679.svg"/>
                     <img src="https://image.flaticon.com/icons/svg/2111/2111612.svg"/>
-                    </div>
-                </p>
+                </div>
             </StyleRoot>
         </div>
     )

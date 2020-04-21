@@ -1,0 +1,14 @@
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    margin-left: 49%;
+    margin-top: 0;
+    border-top: 20px solid white;
+    opacity: 0.5;
+}
+.arrow-down:hover{
+    cursor: pointer;
+    opacity: 1;
+}

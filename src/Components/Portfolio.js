@@ -13,9 +13,10 @@ function Portfolio(){
     return(
         <div className='Body'>
             <StyleRoot>
-                <p style = {styles.fadeInUp}>
+                <p className='title' style = {styles.fadeInUp}>
                     This is my projects
                 </p>
+                <div className="arrow-down" style = {styles.fadeInUp}></div>
             </StyleRoot>
         </div>
     )

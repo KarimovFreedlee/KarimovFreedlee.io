@@ -13,7 +13,7 @@ function Main(){
     return(
         <div className='Body'>
             <StyleRoot>
-                <p style = {styles.fadeInUp}>
+                <p className='title' style = {styles.fadeInUp}>
                     Welcome to my portfolio
                 </p>
             </StyleRoot>
