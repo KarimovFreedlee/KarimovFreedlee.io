@@ -1,11 +1,22 @@
 import React from 'react'
+import { fadeInUp } from 'react-animations'
+import Radium, {StyleRoot} from 'radium';
+
+const styles = {
+    fadeInUp: {
+      animation: 'x 1s',
+      animationName: Radium.keyframes(fadeInUp, 'fadeInUp')
+    }
+}
 
 function About(){
     return(
         <div>
-            <p>
-                This is info about me
-            </p>
+            <StyleRoot>
+                <p style ={styles.fadeInUp}>
+                    This is info about me
+                </p>
+            </StyleRoot>
         </div>
     )
 }

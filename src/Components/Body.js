@@ -1,8 +1,11 @@
 import React from 'react'
 import Main from './Main'
 import About from './About'
+import Portfolio from './Portfolio'
+import Contacts from './Contatcts'
 import {useSelector} from 'react-redux'
 import '../ComponentsView/Body.css'
+
 
 function Body (){
 
@@ -12,7 +15,8 @@ function Body (){
         <div className="Body">
             {activePage === "MAIN" ? <Main/>:
             activePage === "ABOUT" ? <About/>:
-            null}
+            activePage === "PORTFOLIO" ? <Portfolio/>:
+            activePage === "CONTACTS" ? <Contacts/>: null}
         </div>
     );
     

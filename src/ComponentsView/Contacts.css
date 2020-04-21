@@ -1,0 +1,13 @@
+.iconContainer{
+    display:flex;
+    justify-content: space-around;
+}
+
+img{
+    height: 10%;
+    width: 10%;;
+}
+img:hover{
+    cursor: pointer;
+    box-shadow: 12px 20px 20px 1px rgba(0, 0, 255, .2);
+}

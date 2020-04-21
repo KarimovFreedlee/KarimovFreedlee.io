@@ -9,16 +9,16 @@ const styles = {
     }
 }
 
-function Main(){
+function Portfolio(){
     return(
         <div className='Body'>
             <StyleRoot>
                 <p style = {styles.fadeInUp}>
-                    Welcome to my portfolio
+                    This is my projects
                 </p>
             </StyleRoot>
         </div>
     )
 }
 
-export default Main;
+export default Portfolio
