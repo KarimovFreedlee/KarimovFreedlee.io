@@ -9,7 +9,7 @@ function Body (){
     const activePage = useSelector(state => state.activePage);
 
     return(
-        <div>
+        <div className="Body">
             {activePage === "MAIN" ? <Main/>:
             activePage === "ABOUT" ? <About/>:
             null}
